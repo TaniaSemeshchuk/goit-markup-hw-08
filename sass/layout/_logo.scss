@@ -1,0 +1,29 @@
+.logo {
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  font-family: $logo-font;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+
+  color: $second-logo-color;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+
+.logo--accent-color {
+  color: $accent-color;
+}
