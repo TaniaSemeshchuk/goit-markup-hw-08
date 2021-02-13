@@ -5,24 +5,46 @@
 }
 
 body {
-  color: $text-color;
   font-family: $text-font;
+  color: $text-color;
 }
 
 a {
-  display: block;
   text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 
 .conteiner {
   outline: 1px solid tomato;
+
   margin-left: auto;
   margin-right: auto;
 
+  padding-left: 15px;
+  padding-right: 15px;
+
   @media screen and (min-width: 480px) {
     width: 480px;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 
   @media screen and (min-width: 768px) {
@@ -32,10 +54,4 @@ a {
   @media screen and (min-width: 1600px) {
     width: 1200px;
   }
-}
-
-.list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }

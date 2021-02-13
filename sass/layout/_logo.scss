@@ -1,6 +1,5 @@
 .logo {
-  padding-top: 16px;
-  padding-bottom: 16px;
+  display: block;
 
   font-family: $logo-font;
   font-weight: 700;
@@ -8,7 +7,12 @@
   line-height: 1.17;
   letter-spacing: 0.03em;
 
-  color: $second-logo-color;
+  color: $title-text-color;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 
   @media screen and (min-width: 768px) {
     padding-top: 26px;
@@ -18,12 +22,11 @@
   @media screen and (min-width: 1600px) {
     padding-top: 24px;
     padding-bottom: 25px;
-
     font-size: 26px;
     line-height: 1.19;
   }
 }
 
-.logo--accent-color {
+.logo--accent {
   color: $accent-color;
 }

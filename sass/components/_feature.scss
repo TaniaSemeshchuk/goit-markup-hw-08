@@ -1,0 +1,45 @@
+.feature {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.feature-icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  max-width: 450px;
+  height: 120px;
+
+  background-color: $icon-bg-color;
+
+  border-radius: 4px;
+}
+
+.feature-title__item {
+  margin-top: 30px;
+  margin-bottom: 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $title-text-color;
+}
+
+.feature-text__item {
+  margin-top: 10px;
+  margin-bottom: 30px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  &.feature-text__item--margin {
+    margin-bottom: 0;
+  }
+}
