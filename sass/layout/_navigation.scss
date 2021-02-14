@@ -8,6 +8,11 @@
   align-items: center;
 }
 
+.menu-btn__icon {
+  fill: $title-text-color;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .menu-btn {
   display: inline-flex;
   margin: 0;
@@ -16,6 +21,10 @@
   background-color: transparent;
 
   z-index: 1;
+
+  &:focus .menu-btn__icon {
+    fill: $accent-color;
+  }
 }
 
 .menu-btn .icon-close {

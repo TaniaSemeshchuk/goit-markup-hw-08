@@ -36,7 +36,7 @@ img {
 }
 
 .conteiner {
-  /* outline: 1px solid tomato;*/
+  /*outline: 1px solid tomato;*/
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -59,6 +59,10 @@ img {
   .conteiner {
     width: 1200px;
   }
+}
+
+.line {
+  border-bottom: 1px solid #ececec;
 }
 
 .logo {
@@ -114,6 +118,12 @@ img {
           align-items: center;
 }
 
+.menu-btn__icon {
+  fill: #212121;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .menu-btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -123,6 +133,10 @@ img {
   border: none;
   background-color: transparent;
   z-index: 1;
+}
+
+.menu-btn:focus .menu-btn__icon {
+  fill: #2196f3;
 }
 
 .menu-btn .icon-close {

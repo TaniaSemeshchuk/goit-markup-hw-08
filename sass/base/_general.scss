@@ -35,7 +35,7 @@ img {
 }
 
 .conteiner {
-  /* outline: 1px solid tomato;*/
+  /*outline: 1px solid tomato;*/
 
   margin-left: auto;
   margin-right: auto;
@@ -54,4 +54,8 @@ img {
   @media screen and (min-width: 1600px) {
     width: 1200px;
   }
+}
+
+.line {
+  border-bottom: 1px solid #ececec;
 }
