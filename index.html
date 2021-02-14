@@ -33,7 +33,7 @@
                 <div class="menu-conteiner" id="menu-conteiner" data-menu>
                     <ul class="list nav-page">
                         <li class="nav-page__item"><a href="./index.html" class="nav-page__link current">Студия</a></li>
-                        <li class="nav-page__item"><a href="" class="nav-page__link">Портфолио</a></li>
+                        <li class="nav-page__item"><a href="./portfolio.html" class="nav-page__link">Портфолио</a></li>
                         <li class="nav-page__item"><a href="" class="nav-page__link">Контакты</a></li>
                     </ul>
 
@@ -61,7 +61,7 @@
                 Эффективные решения <br />для вашего бизнеса
             </h1>
 
-            <button type="button" class="hero-btn">
+            <button type="button" class="hero-btn" data-modal-open>
                 Заказать услугу
             </button>
         </section>
@@ -371,7 +371,70 @@
 
     </footer>
 
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close-btn" data-modal-close>
+                <svg width="18" height="18" class="modal-close-icon">
+                    <use href="./images/icon.svg#modal-close"></use>
+                </svg>
+            </button>
+            
+            
+            <form class="modal-form">
+                <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
+            
+                <div class="form-field">
+                    <input type="text" name="name" id="name" class="form-input" />
+                    <svg class="form-icon">
+                        <use href="./images/icon.svg#person-black"></use>
+                    </svg>
+                    <label for="name" class="form-label">Имя</label>
+                </div>
+            
+                <div class="form-field">
+                    <input type="tel" name="phone" id="phone" class="form-input" />
+                    <svg class="form-icon">
+                        <use href="./images/icon.svg#phone-black"></use>
+                    </svg>
+                    <label for="phone" class="form-label">Телефон</label>
+                </div>
+            
+                <div class="form-field">
+                    <input type="email" name="email" id="email" class="form-input" />
+                    <svg class="form-icon">
+                        <use href="./images/icon.svg#email-black"></use>
+                    </svg>
+                    <label for="email" class="form-label">Почта</label>
+                </div>
+            
+                <div class="field-comment">
+                    <textarea name="comment" id="comment" placeholder="Введите текст"></textarea>
+                    <label for="comment" class="comment-label">Комментарий</label>
+                </div>
+            
+                <div class="policy-field">
+                    <label class="policy-label">
+                        <input class="checkbox" type="checkbox" name="policy"
+                            value="Соглашаюсь с рассылкой и принимаю Условия договора" />
+                        <span class="check-icon"></span>
+                        Соглашаюсь с рассылкой и принимаю &nbsp;
+                        <a href="" class="policy-link">Условия договора</a>
+                    </label>
+            
+                </div>
+            
+            
+                <div class="sub-btn-box">
+                    <button type="submit" class="submit-btn">Отправить</button>
+                </div>
+            </form>
+            
+        </div>
+
+    </div>
+
     <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
 
 </body>
 </html>
